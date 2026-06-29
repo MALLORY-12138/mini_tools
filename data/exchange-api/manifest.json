@@ -1,0 +1,35 @@
+{
+  "fetchedAt": "2026-06-29T08:00:45.728Z",
+  "api": {
+    "repository": "https://github.com/fawazahmed0/exchange-api",
+    "primaryBaseUrl": "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1",
+    "fallbackBaseUrl": "https://latest.currency-api.pages.dev/v1"
+  },
+  "currencies": {
+    "count": 341,
+    "path": "data/exchange-api/currencies.json"
+  },
+  "rates": [
+    {
+      "base": "usd",
+      "path": "data/exchange-api/currencies/usd.json",
+      "date": "2026-06-28",
+      "rateCount": 341,
+      "source": "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json"
+    },
+    {
+      "base": "cny",
+      "path": "data/exchange-api/currencies/cny.json",
+      "date": "2026-06-28",
+      "rateCount": 341,
+      "source": "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/cny.json"
+    },
+    {
+      "base": "eur",
+      "path": "data/exchange-api/currencies/eur.json",
+      "date": "2026-06-28",
+      "rateCount": 341,
+      "source": "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur.json"
+    }
+  ]
+}
