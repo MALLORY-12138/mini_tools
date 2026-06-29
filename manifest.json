@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Mini Tools: 地区与汇率查询",
+  "description": "选中页面文本后，通过右键菜单快速查询地区代码或汇率。",
+  "version": "0.1.0",
+  "permissions": ["contextMenus", "scripting", "activeTab"],
+  "host_permissions": [
+    "https://cdn.jsdelivr.net/*",
+    "https://latest.currency-api.pages.dev/*"
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"],
+      "css": ["src/styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "data/country_codes.csv",
+        "data/exchange-api/currencies.json",
+        "data/exchange-api/currencies/*.json"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
