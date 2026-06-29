@@ -16,6 +16,16 @@ Chrome MV3 扩展：选中网页文本后，通过右键菜单快速查询地区
 4. 选择本仓库目录：`C:\Users\m2637\OneDrive\文档\ilands_tools`
 5. 在任意网页选中文本，右键选择 `Mini Tools -> 查地区` 或 `Mini Tools -> 查汇率`
 
+## 打包
+
+生成标准 Chrome 扩展 ZIP：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/package_chrome_extension.ps1
+```
+
+输出文件位于 `dist/mini-tools-chrome-extension-v版本.zip`。
+
 ## UI 原型
 
 见 [docs/ui-prototype.md](docs/ui-prototype.md)。
