@@ -5,7 +5,8 @@ Chrome MV3 扩展：选中网页文本后，通过右键菜单快速查询地区
 ## 功能
 
 - `查地区`：读取 `data/country_codes.csv`，支持用国际代码、中文地区名、英文名称、电话区号匹配，并展示其他字段。
-- `查汇率`：调用 [fawazahmed0/exchange-api](https://github.com/fawazahmed0/exchange-api)，优先展示美元和人民币双向汇率，并支持其他币种列表筛选。
+- `查汇率`：调用 [fawazahmed0/exchange-api](https://github.com/fawazahmed0/exchange-api)，优先展示美元和人民币双向汇率，支持输入金额、修改源/目标货币并即时换算。
+- 自然语言换算：支持选中类似 `300法郎换算韩元`、`100 usd to cny` 的文本后直接打开换算结果。
 - API fallback：优先使用 jsDelivr，失败后使用 Cloudflare Pages，再失败后读取 `data/exchange-api` 本地缓存。
 
 ## 安装调试

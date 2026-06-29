@@ -203,7 +203,9 @@
   font-size: 12px;
 }
 
-.mini-tools-filter input {
+.mini-tools-filter input,
+.mini-tools-converter input,
+.mini-tools-converter select {
   width: 100%;
   min-height: 36px;
   border: 1px solid #d4d9e2;
@@ -212,6 +214,56 @@
   color: #18202f;
   background: #ffffff;
   font: inherit;
+}
+
+.mini-tools-converter {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.mini-tools-converter label {
+  display: grid;
+  gap: 6px;
+  color: #667085;
+  font-size: 12px;
+}
+
+.mini-tools-converter input,
+.mini-tools-converter select {
+  color: #18202f;
+}
+
+.mini-tools-swap {
+  width: 38px;
+  height: 36px;
+  border: 1px solid #d4d9e2;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #1f6f78;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.mini-tools-swap:hover {
+  background: #e7f4f2;
+}
+
+.mini-tools-conversion-result {
+  display: block;
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #123c45;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+
+.mini-tools-conversion-meta {
+  margin: 8px 0 0;
 }
 
 .mini-tools-rate-list {
@@ -287,6 +339,11 @@
 @media (min-width: 520px) {
   .mini-tools-exchange-summary {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .mini-tools-converter {
+    grid-template-columns: minmax(82px, 0.8fr) minmax(0, 1fr) 38px minmax(0, 1fr);
+    align-items: end;
   }
 }
 

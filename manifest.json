@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Mini Tools: 地区与汇率查询",
   "description": "选中页面文本后，通过右键菜单快速查询地区代码或汇率。",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "permissions": ["contextMenus", "scripting", "activeTab"],
   "host_permissions": [
     "https://cdn.jsdelivr.net/*",
